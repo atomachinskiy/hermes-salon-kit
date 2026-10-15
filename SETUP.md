@@ -23,12 +23,13 @@
 
 ## Шаг 2. Скиллы для салона
 
-Нужна папка `skills` из этого набора: 12 скиллов (product-marketing, swot-analysis, price-check, customer-journey-map, analiz-konkurentov, campaign-plan, kontent-plan, social, offers, sms, generaciya-kreativov, carousel-writer-sms).
+Нужна папка `skills` из этого набора: 25 скиллов. 12 под стратегию и маркетинг (product-marketing, swot-analysis, price-check, customer-journey-map, analiz-konkurentov, campaign-plan, kontent-plan, social, offers, sms, generaciya-kreativov, carousel-writer-sms) и 13 для Instagram (ig-reel, ig-viral, ig-caption, ig-carousel, ig-story, ig-profile, ig-plan, ig-human, ig-comment, ig-reply, ig-dm, ig-repurpose, ig-audit).
 
 1. Если набор уже лежит у человека на компьютере (распакованный архив или папка `hermes-salon-kit`), возьми `skills` оттуда.
 2. Если нет, скачай архив: `https://github.com/atomachinskiy/hermes-salon-kit/archive/refs/heads/main.zip`. Качай именно архив одним файлом (curl, PowerShell Invoke-WebRequest или Python). Не ставь скиллы по одному через `hermes skills install`: у GitHub лимит запросов, на воркшопе весь зал в одной сети.
 3. Распакуй любым доступным способом (unzip, PowerShell Expand-Archive, Python zipfile) и скопируй содержимое папки `skills` в `<HERMES_HOME>/skills/salon-skills/`. Должно получиться `<HERMES_HOME>/skills/salon-skills/<имя-скилла>/SKILL.md`.
-4. Проверь: `hermes skills list` показывает все 12. Если какого-то нет, проверь путь.
+4. Проверь: `hermes skills list` показывает все 25. Если какого-то нет, проверь путь.
+5. Скиллы Instagram читают файл голоса автора `~/.claude/instagram/voice.md` (папка в домашней папке пользователя, на Windows тоже). Скопируй туда `instagram/voice.md` из набора. Заполнять сейчас не нужно: на практике человек пришлёт ссылки на свои посты, и ты заполнишь его по ним. Скиллы Instagram ничего не публикуют сами, только пишут тексты.
 
 ## Шаг 3. Картинки через подписку ChatGPT
 
@@ -62,6 +63,6 @@
 
 ## Шаг 7. Итог
 
-1. Покажи короткую таблицу: шаг и ✅ или ❌. Шаги: русский язык, скиллы (сколько из 12), картинки, поиск, браузер, Google, Telegram.
+1. Покажи короткую таблицу: шаг и ✅ или ❌. Шаги: русский язык, скиллы (сколько из 25), картинки, поиск, браузер, Google, Telegram.
 2. Скажи: «Откройте новый чат, чтобы новые настройки и скиллы заработали».
 3. Предложи первую задачу: «Давайте соберём карточку вашего салона. Пришлите ссылку на сайт, Яндекс Карты и соцсети».
